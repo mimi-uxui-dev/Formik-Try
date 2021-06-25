@@ -51,6 +51,7 @@ export default function App() {
       slidesToScroll: 1, 
       arrows: false
     };
+
     const settings2 = {
       autoplay: true,
       infinite: true,
@@ -68,7 +69,7 @@ export default function App() {
         
 
           <Slider  className='innerSlider' {...settings2}>
-              { i.map(data => <div key={data.id}>
+              { i.map(data => <div className="innerSlide" key={data.id}>
                 <img src={data.url} alt="yehh" /> 
                 <div>
                   <h3>{ data.title }</h3>
